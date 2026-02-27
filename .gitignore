@@ -1,0 +1,60 @@
+# Power BI / PBIX — não versionar arquivo com dados locais
+*.pbix
+
+# Arquivos temporários e cache do Power BI
+*.pbix.bak
+*.pbix.tmp
+~*.pbix
+~*.pbit
+
+# Microsoft Office temporários
+~$*.xlsx
+~$*.xls
+~$*.csv
+
+# ────────────────────────────────────────────
+# Sistema Operacional
+# ────────────────────────────────────────────
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ────────────────────────────────────────────
+# IDEs e Editores
+# ────────────────────────────────────────────
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# ────────────────────────────────────────────
+# Dados locais / sensíveis — não versionar
+# ────────────────────────────────────────────
+data/local/
+*.env
+secrets.*
+
+# ────────────────────────────────────────────
+# Exceções explícitas — manter no repositório
+# ────────────────────────────────────────────
+# Manter o template Power BI (.pbit)
+!powerbi/template/*.pbit
