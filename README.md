@@ -36,11 +36,14 @@ BrasilGeografia/
 1. Faça o download (ou clone) deste repositório.
 2. Acesse a pasta `powerbi/template/`.
 3. Abra o arquivo `BrasilGeografia.pbit` com o **Power BI Desktop** (versão gratuita disponível em [powerbi.microsoft.com](https://powerbi.microsoft.com/pt-br/desktop/)).
-4. O Power BI solicitará que você informe o caminho da fonte de dados (planilha Excel ou outra fonte configurada).
-5. Aponte para o arquivo correspondente em seu ambiente local e clique em **Carregar**.
-6. O relatório será populado com seus dados locais.
+4. Ao abrir, o Power BI pode solicitar permissões/credenciais para as fontes.
+   - Este projeto consome **APIs públicas** (não depende de arquivos locais).
+   - Em **Data source settings** (Configurações de fonte de dados), selecione o(s) endpoint(s) e escolha **Authentication method: Anonymous (Anônimo)**.
+5. Se aparecerem prompts de **privacidade/permissões** (Privacy levels / consentimento de acesso), confirme para permitir que o Power BI faça as chamadas HTTP necessárias.
+6. Após carregar o modelo, clique em **Refresh (Atualizar)** para executar as consultas (Power Query) e obter os dados mais recentes via API.
+   - Observação: eventuais **limites de requisição (rate limit)**, instabilidades ou indisponibilidade temporária das APIs podem impactar a atualização.
 
-> **Nota:** O `.pbit` é um template sem dados — cada usuário conecta à sua própria cópia dos dados.
+> **Nota:** os endpoints/fontes utilizados devem ser documentados em `docs/fontes.md`.
 
 ---
 
